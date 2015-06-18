@@ -9,7 +9,7 @@ mod.directive("tlAjaxDisable", [
                 element.unbind(action).bind(action, function () {
                     event.preventDefault();
                     var promise = fn(scope, { $event: event });
-                    if (Triarc.hasNoValue(promise)) {
+                    if (Triarc.hasValue(promise)) {
                         element.prop("disabled", true);
                         promise.finally(function () {
                             element.prop("disabled", false);
