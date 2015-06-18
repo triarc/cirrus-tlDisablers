@@ -8,7 +8,7 @@ mod.directive("tlAjaxDisable", [
                 action = action.toLowerCase();
                 element.unbind(action).bind(action, function () {
                     var promise = fn(scope, { $event: event });
-                    if (Triarc.hasNoValue(promise)) {
+                    if (Triarc.hasValue(promise)) {
                         element.prop("disabled", true);
                         promise.finally(function () {
                             element.prop("disabled", false);
