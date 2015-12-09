@@ -1,10 +1,9 @@
 {
   "name": "cirrus-tlDisablers",
   "version": "0.0.10",
-  "authors": [
-    "Marco Bachmann <mb@triarc-labs.com>"
+  "main": [
+    "tlDisablers.js"
   ],
-  "main": "tlDisablers.js",
   "moduleType": [
     "globals"
   ],
@@ -21,6 +20,6 @@
   },
   "endpoint": "https://github.com/triarc/cirrus-tlDisablers.git",
   "dependencies": {
-    "cirrus-utils": "~0.2.0"
+    "cirrus-utils": "^0.3.0"
   }
 }
